@@ -1,0 +1,142 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* Peliculas */
+
+.movie {
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    height: 400px;
+    width: 18rem;
+    padding: 0px;
+    margin: auto;
+    margin-right: 20px;
+    background-color: white;
+}
+
+.movie img {
+    height: 330px;
+    width: 100%;
+    padding: 5px;
+    margin: auto;
+    object-fit: cover;
+}
+
+.movie-info {
+    background-color: #373d6d;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
+    padding: 5px;
+}
+
+.title-movie {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    display: block;
+    font-size: 15px;
+    width: 100%;
+}
+
+.puntuacion {
+    display: block;
+    width: 60px;
+    height: 60px;
+    color: #48C9B0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    background-color: black;
+    border-radius: 90px;
+    border: 2px dotted white;
+    padding: 5px 8px;
+}
+
+.descrip {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    height: 500px;
+    width: 18rem;
+}
+
+.text-descrip {
+    text-align: justify;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.movie:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+
+
+/*Styles(Carrusel) */
+
+.cont-general {
+    position: relative;
+}
+
+.btn-scroll {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 92%;
+    border: none;
+    top: 10px;
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    opacity: 20px;
+    transition: all 0.5s;
+}
+
+.btn-left {
+    left: 0px;
+    z-index: 2;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.btn-right {
+    right: 0px;
+    z-index: 2;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.lienzo {
+    overflow: hidden;
+}
+
+.btn-scroll:hover {
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 30px;
+    transition: all 0.5s;
+}
+
+
+/* Responsive Desing */
+
+@media(max-width:600px) {
+    .btn-scroll {
+        top: 0px;
+        height: 89%;
+    }
+    .btn-scroll:hover {
+        width: 50px;
+        background-color: rgba(0, 0, 0, 0.8);
+        font-size: 30px;
+        transition: all 0.5s;
+    }
+}
